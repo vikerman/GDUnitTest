@@ -10,6 +10,6 @@ $GODOT_BIN --path . -s -d ./addons/gdUnit4/bin/GdUnitCmdTool.gd $*
 exit_code=$?
 echo "Run tests ends with $exit_code"
 
-$GODOT_BIN --headless --path . --quiet -s -d ./addons/gdUnit4/bin/GdUnitCopyLog.gd $* > /dev/null
+$GODOT_BIN --headless --path . --quiet -s -d res://addons/gdUnit4/bin/GdUnitCopyLog.gd $* > /dev/null
 exit_code2=$?
 exit $exit_code
